@@ -13,7 +13,7 @@
     <header>
         <nav>
             <ul>
-                <li><a id="logo" href="index.php"><img id="logoImg" src="img/MMX4RepliforceLogo.webp" alt="logo-megaman-x5"></a></li>
+                <li><a id="logo" href="index.php"><img id="logoImg" src="img/MMX4RepliforceLogo.webp" alt="logo-repliforce"></a></li>
                 <li id="title"><h1>epliforce Mail Service</h1></li>
             </ul>
         </nav>
