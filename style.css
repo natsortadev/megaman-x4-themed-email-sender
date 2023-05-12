@@ -6,7 +6,6 @@
 }
 
 .content {
-/* this is needed or the background will be offset by a few pixels at the top */
 overflow: auto;
 position: relative;
 }
