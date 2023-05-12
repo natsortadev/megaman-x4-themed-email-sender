@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content {
+/* this is needed or the background will be offset by a few pixels at the top */
+overflow: auto;
+position: relative;
+}
+
+.content::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    display: block;
+    background-image: url('img/X4Repliforce1.webp');
+    background-size:100%;
+    width: 110%;
+    height: 110%;
+    margin-top: 4vh;
+
+    -webkit-filter: blur(8px);
+    -moz-filter: blur(8px);
+    -o-filter: blur(8px);
+    -ms-filter: blur(8px);
+    filter: blur(8px);
+}
+
+header {
+    background-color: black;
+    padding: 30px 30px 30px;
+    position: relative;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+    list-style: none;
+    align-items: center;
+}
+
+ul:hover {
+    filter: brightness(50%);
+}
+
+.pai {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(255, 255, 255);
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 12vh;
+    padding: 50px 20px 50px 20px;
+    border-radius: 30px;
+}
+
+form#principal {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    justify-content: center;
+}
+
+label {
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.botao {
+    border: none;
+    background-color: blue;
+    color: white;
+    margin-top: 1vh;
+    margin-bottom: 5vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    padding: 1vh;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: rgb(255, 208, 0);
+}
+
+.campo {
+    border: none;
+    background-color: rgb(224, 224, 224);
+    color: black;
+    margin-top: 2vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+    padding: 1vh;
+    border-radius: 10px;
+}
+
+.campo:hover {
+    background-color: rgb(208, 208, 208);
+}
+
+#msg {
+    padding-bottom: 5vh;
+}
+
+#logo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+}
+
+#logoImg {
+    max-width: 110px;
+}
+
+#title {
+    color: white;
+    text-align: center;
+}
+
+footer {
+    background-color: black;
+    padding: 30px 30px 25px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#rodape {
+    color: white;
+    text-align: center;
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: red;
+    text-decoration: none;
+}
